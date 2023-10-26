@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="kalorie">
+      <h1>Kalorienrechner</h1>
+      <form onsubmit="return false">
+        <label for="">Körpergröße</label>
+        <input type="number" name="" id="größe" />
+        <label for="">Alter</label>
+        <input type="number" name="" id="alter" />
+        <label for="">Gewicht</label>
+        <input type="number" name="" id="gewicht" />
+        <div>
+          <input type="radio" name="geschlecht" id="weiblich" /><label for=""
+            >Weiblich</label
+          >
+          <input type="radio" name="geschlecht" id="männlich" /><label for=""
+            >Männlich</label
+          >
+        </div>
+        <select name="" id="tätigkeit">
+          <option value="0.95">koma</option>
+          <option value="1.2">bettlägrig</option>
+          <option value="1.5">beamter</option>
+          <option value="1.7">entspannter</option>
+          <option value="1.9">ausgebeutete</option>
+          <option value="2.2">sklaven</option>
+        </select>
+        <button type="submit" id="nährwerte">Berechnen</button>
+      </form>
+      <div class="grid">
+        <p></p>
+        <p>kcal</p>
+        <p>kj</p>
+        <p>Grundumsatz</p>
+        <p id="kcalGrund">0</p>
+        <p id="kjGrund">0</p>
+        <p>Gesamtumsatz</p>
+        <p id="kcalGes">0</p>
+        <p id="kjGes">0</p>
+      </div>
+    </section>
+
+    <section class="mehrwert">
+      <h1>Mehrwertsteuerrechner</h1>
+      <form onsubmit="return false">
+        <div>
+          <label for="">Was soll berechnet werden</label>
+          <div>
+            <input type="radio" name="richtung" id="nzb" /><label for=""
+              >Netto->Brutto</label
+            >
+            <input type="radio" name="richtung" id="bzn" /><label for=""
+              >Brutto->Netto</label
+            >
+          </div>
+        </div>
+        <div>
+          <label for="">Mehrertsteuersatz</label>
+          <div>
+            <input type="radio" name="steuer" id="neunzehn" /><label>19%</label>
+            <input type="radio" name="steuer" id="sieben" /><label>7%</label>
+          </div>
+        </div>
+        <div>
+          <label id="betragDisplay">Nettobetrag</label>
+          <input type="number" name="" id="betrag" />
+        </div>
+        <button type="submit" id="rechnen">Berechnen</button>
+      </form>
+      <h2></h2>
+      <article>
+        <p>Mehrwertsteuerbetrag</p>
+        <p id="steuerBetrag"></p>
+        <p></p>
+      </article>
+      <article>
+        <p id="anzeige">Bruttobetrag</p>
+        <p id="gesamtBetrag"></p>
+        <p></p>
+      </article>
+    </section>
+  </body>
+  <script src="./assets/js/script.js"></script>
+</html>

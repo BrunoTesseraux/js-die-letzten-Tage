@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <article class="bgc">
+      <div>
+        <input type="text" name="color" id="color" />
+        <label for="color">Give me a color! Or the Url to a picture</label>
+        <button onclick="changeColor()">Magic</button>
+      </div>
+    </article>
+    <article class="score">
+      <div>
+        <fieldset>
+          <legend id="homeName">HOME</legend>
+          <p id="homeDisplay"></p>
+        </fieldset>
+        <div class="button">
+          <button onclick="home(1)">+1</button>
+          <button onclick="home(2)">+2</button>
+          <button onclick="home(3)">+3</button>
+        </div>
+      </div>
+      <div>
+        <fieldset>
+          <legend id="awayName">AWAY</legend>
+          <p id="awayDisplay"></p>
+        </fieldset>
+        <div class="button">
+          <button onclick="away(1)">+1</button>
+          <button onclick="away(2)">+2</button>
+          <button onclick="away(3)">+3</button>
+        </div>
+      </div>
+      <button type="reset" class="reset" onclick="reset()">reset</button>
+      <button onclick="teamNamen()">vergebe Teamnamen</button>
+    </article>
+    <article class="addition">
+      <p>
+        <span id="nOne"></span>+<span id="nTwo"></span>=
+        <input type="number" name="" id="ergebnis" />
+        <button onclick="check()">Check</button>
+        <button onclick="neu()">Neues Rätsel</button>
+      </p>
+      <p id="statement"></p>
+    </article>
+  </body>
+  <script src="./assets/js/script.js"></script>
+</html>

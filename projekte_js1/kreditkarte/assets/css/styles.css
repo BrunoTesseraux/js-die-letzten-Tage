@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: pink;
+}
+img {
+  display: inline-block;
+  width: 35px;
+  margin: 10px;
+}
+section {
+  width: 420px;
+  height: 400px;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  margin-top: 200px;
+  box-shadow: 0 0 20px #afafaf;
+}
+.bg {
+  width: 370px;
+  background: url(https://s3-alpha-sig.figma.com/img/74ec/915b/0f09dcbc445dd90a304d8a27a046e478?Expires=1698624000&Signature=cVbiItLaFIcn5IphFjFDcNhPkq4QToKxvwB6nfJwR6w~1zJ0OU0RnQ2sNm1NMeN4HbwGb~TIZSk0FahNjQ2jMRKjr3Ho0pjReD-gUE3yl86NIe~OJT-vZ7uBKMX35yVqHhfSJ~wCY~KodAL4K1APdrYxoyARbfUtZVas3Rnd~Lk111bp9p1McowuYZi-pLBC98ly2TzYwVOM31oEj2-IStkW3g7thXTH-lXPWfs2Lu6jAlkZ395gnOioD6iYjcm0LO8a-t5-S7Vt27si0PLw03OLbXa4LiFz799ej1r1tvE4KjD1cW75NU3fVTrF9XBaNSMKxSYjQSkr3WgYUX3C-Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4)
+    no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -150px;
+  left: 25px;
+  height: 200px;
+}
+section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+p {
+  margin-inline: 10px;
+  color: gray;
+}
+h1 {
+  margin: 0 10px 10px 10px;
+}
+form {
+  padding: 100px 50px 50px 50px;
+}
+label {
+  display: block;
+}
+input {
+  display: block;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form {
+  flex-direction: row;
+}

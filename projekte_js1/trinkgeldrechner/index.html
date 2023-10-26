@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Trinkgeldrechner</h1>
+      <form onsubmit="return false">
+        <label class="betrag">
+          Wie hoch ist die Rechnung
+          <input type="number" step="0.01" id="betrag" />
+        </label>
+        <label class="mitesser">
+          Wie viele Menschen teilen sich die Rechnung
+          <input type="number" id="mitesser" />
+        </label>
+        <select name="service" id="prozent">
+          <option value="" disabled selected>Wie gut war der Service</option>
+          <option value="0.02">beschissen 2%</option>
+          <option value="0.1">gut 10%</option>
+          <option value="0.2">göttlich oder zusatzleistungen 20%</option>
+        </select>
+        <input type="submit" value="Berechnen" onclick="calculate()" />
+      </form>
+      <p>Das Trinkgeld ist: <span id="trinkgeld"></span>€</p>
+      <p>Die Gesamtsummer beträgt: <span id="gesamtPreis"></span>€</p>
+      <p>Der Preis pro Person ist: <span id="proPerson"></span>€</p>
+    </div>
+  </body>
+  <script src="./assets/js/script.js"></script>
+</html>
