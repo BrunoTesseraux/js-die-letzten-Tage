@@ -22,28 +22,24 @@ leggo.addEventListener("click", () => {
     const gesamtumsatzKcal = grundumsatzKcal * Number(tätigkeit);
     const grundumsatzKj = grundumsatzKcal * 4.184;
     const gesamtumsatzKj = grundumsatzKj * Number(tätigkeit);
-    document.querySelector("#kcalGrund").textContent = grundumsatzKcal;
-    document.querySelector("#kjGrund").textContent = grundumsatzKj;
-    document.querySelector("#kcalGes").textContent = gesamtumsatzKcal;
-    document.querySelector("#kjGes").textContent = gesamtumsatzKj;
-    console.log(größe);
-    console.log(alter);
-    console.log(gewicht);
-    console.log(tätigkeit);
+    document.querySelector("#kcalGrund").textContent =
+      grundumsatzKcal.toFixed(2);
+    document.querySelector("#kjGrund").textContent = grundumsatzKj.toFixed(2);
+    document.querySelector("#kcalGes").textContent =
+      gesamtumsatzKcal.toFixed(2);
+    document.querySelector("#kjGes").textContent = gesamtumsatzKj.toFixed(2);
   } else if (geschlecht === 1) {
     const grundumsatzKcal =
       655.1 + 9.6 * Number(gewicht) + 1.8 * Number(größe) - 4.7 * Number(alter);
     const gesamtumsatzKcal = grundumsatzKcal * Number(tätigkeit);
     const grundumsatzKj = grundumsatzKcal * 4.184;
     const gesamtumsatzKj = grundumsatzKj * Number(tätigkeit);
-    document.querySelector("#kcalGrund").textContent = grundumsatzKcal;
-    document.querySelector("#kjGrund").textContent = grundumsatzKj;
-    document.querySelector("#kcalGes").textContent = gesamtumsatzKcal;
-    document.querySelector("#kjGes").textContent = gesamtumsatzKj;
-    console.log(größe);
-    console.log(alter);
-    console.log(gewicht);
-    console.log(tätigkeit);
+    document.querySelector("#kcalGrund").textContent =
+      grundumsatzKcal.toFixed(2);
+    document.querySelector("#kjGrund").textContent = grundumsatzKj.toFixed(2);
+    document.querySelector("#kcalGes").textContent =
+      gesamtumsatzKcal.toFixed(2);
+    document.querySelector("#kjGes").textContent = gesamtumsatzKj.toFixed(2);
   }
 });
 
@@ -81,17 +77,20 @@ button.addEventListener("click", () => {
   if (weg === 0) {
     const steuerBetrag = betrag * steuer;
     const ergebnis = Number(betrag) + Number(steuerBetrag);
-    document.querySelector("#steuerBetrag").textContent = steuerBetrag;
-    document.querySelector("#gesamtBetrag").textContent = ergebnis;
+    document.querySelector("#steuerBetrag").textContent =
+      steuerBetrag.toFixed(2);
+    document.querySelector("#gesamtBetrag").textContent = ergebnis.toFixed(2);
   } else if (weg === 1 && steuer === 0.07) {
     const steuerBetrag = (betrag / 107) * 7;
     const ergebnis = Number(betrag) - Number(steuerBetrag);
-    document.querySelector("#steuerBetrag").textContent = steuerBetrag;
-    document.querySelector("#gesamtBetrag").textContent = ergebnis;
+    document.querySelector("#steuerBetrag").textContent =
+      steuerBetrag.toFixed(2);
+    document.querySelector("#gesamtBetrag").textContent = ergebnis.toFixed(2);
   } else if (weg === 1 && steuer === 0.19) {
     const steuerBetrag = (betrag / 119) * 19;
     const ergebnis = Number(betrag) - Number(steuerBetrag);
-    document.querySelector("#steuerBetrag").textContent = steuerBetrag;
-    document.querySelector("#gesamtBetrag").textContent = ergebnis;
+    document.querySelector("#steuerBetrag").textContent =
+      steuerBetrag.toFixed(2);
+    document.querySelector("#gesamtBetrag").textContent = ergebnis.toFixed(2);
   }
 });
